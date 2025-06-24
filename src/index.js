@@ -1,5 +1,15 @@
 const API_URL = "http://localhost:3000/posts";
 
+
+
+// filepath: /home/joan/Blog-manager/src/index.js
+function main() {
+  displayPosts();
+  addNewPostListener();
+}
+
+document.addEventListener("DOMContentLoaded", main);
+
 // Fetch and display all posts
 function displayPosts() {
   fetch(API_URL)
